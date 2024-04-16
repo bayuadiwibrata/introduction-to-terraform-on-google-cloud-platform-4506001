@@ -5,7 +5,7 @@ data "google_compute_image" "ubuntu" {
 }
 
 resource "google_compute_instance" "web" {
-  name         = "web"
+  name         = "compute-terraform"
   machine_type = "n1-standard-1"
 
   
