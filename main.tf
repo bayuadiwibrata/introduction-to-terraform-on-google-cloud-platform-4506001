@@ -6,7 +6,7 @@ data "google_compute_image" "ubuntu" {
 
 resource "google_compute_instance" "web" {
   name         = "web"
-  machine_type = "e2-micro"
+  machine_type = "n1-standard-1"
 
   
   boot_disk {
@@ -15,7 +15,7 @@ resource "google_compute_instance" "web" {
     }
   }
   network_interface {
-   subnetwork = "default"
+   subnetwork = "bluebirdgroup-vpc"
    access_config {
       # Leave empty for dynamic public IP
     }
