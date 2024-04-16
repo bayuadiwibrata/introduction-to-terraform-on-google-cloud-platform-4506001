@@ -15,7 +15,7 @@ resource "google_compute_instance" "web" {
     }
   }
   network_interface {
-   subnetwork = "bluebirdgroup-vpc"
+   subnetwork = "devops-dev-salma-subnet-01"
    access_config {
       # Leave empty for dynamic public IP
     }
